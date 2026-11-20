@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hamzah Clinic - Dr. Laique Ahmad (B.U.M.S)</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    }
+    body {
+      background: #f1f5f9;
+      display: flex;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 16px;
+    }
+    .card {
+      background: #ffffff;
+      width: 100%;
+      max-width: 430px;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 10px 25px rgba(15, 23, 42, 0.08);
+      height: fit-content;
+    }
+    .header {
+      background: linear-gradient(135deg, #0f766e, #0d9488);
+      color: #ffffff;
+      text-align: center;
+      padding: 32px 20px 26px;
+    }
+    .clinic-badge {
+      display: inline-block;
+      background: rgba(255, 255, 255, 0.18);
+      padding: 4px 12px;
+      border-radius: 999px;
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+    }
+    .header h1 {
+      font-size: 24px;
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+    .header p {
+      font-size: 15px;
+      opacity: 0.92;
+    }
+    .quick-actions {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      background: #115e59;
+      border-top: 1px solid rgba(255, 255, 255, 0.15);
+    }
+    .quick-actions a {
+      color: #ffffff;
+      text-decoration: none;
+      text-align: center;
+      padding: 14px 8px;
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.4px;
+      border-right: 1px solid rgba(255, 255, 255, 0.15);
+    }
+    .quick-actions a:last-child {
+      border-right: none;
+    }
+    .quick-actions span {
+      display: block;
+      font-size: 18px;
+      margin-bottom: 4px;
+    }
+    .cta-wrap {
+      padding: 20px 20px 8px;
+    }
+    .whatsapp-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      width: 100%;
+      background: #25d366;
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 16px;
+      padding: 14px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(37, 211, 102, 0.3);
+    }
+    .details {
+      padding: 12px 20px 24px;
+    }
+    .row {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      padding: 16px 0;
+      border-bottom: 1px solid #e2e8f0;
+    }
+    .row:last-child {
+      border-bottom: none;
+    }
+    .icon {
+      font-size: 20px;
+      width: 28px;
+      text-align: center;
+      margin-top: 2px;
+    }
+    .info h3 {
+      font-size: 15px;
+      color: #0f172a;
+      font-weight: 600;
+      margin-bottom: 3px;
+    }
+    .info p {
+      font-size: 13.5px;
+      color: #64748b;
+      line-height: 1.45;
+    }
+    .map-link {
+      display: inline-block;
+      margin-top: 8px;
+      color: #0d9488;
+      font-size: 13px;
+      font-weight: 700;
+      text-decoration: none;
+    }
+    .save-btn {
+      display: block;
+      width: 100%;
+      margin-top: 8px;
+      padding: 12px;
+      background: #f8fafc;
+      color: #0f172a;
+      border: 1.5px solid #cbd5e1;
+      border-radius: 12px;
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="header">
+      <div class="clinic-badge">Hamzah Clinic</div>
+      <h1>Dr. Laique Ahmad</h1>
+      <p>Doctor (B.U.M.S)</p>
+    </div>
+
+    <div class="quick-actions">
+      <a href="tel:+919628502277"><span>📞</span>CALL</a>
+      <a href="https://wa.me/919628502277" target="_blank"><span>💬</span>WHATSAPP</a>
+      <a href="https://maps.app.goo.gl/C9z14j1dPUkQthvXA?g_st=ac" target="_blank"><span>📍</span>DIRECTIONS</a>
+    </div>
+
+    <div class="cta-wrap">
+      <a class="whatsapp-btn" href="https://wa.me/919628502277" target="_blank">
+        Chat on WhatsApp
+      </a>
+    </div>
+
+    <div class="details">
+      <div class="row">
+        <div class="icon">📱</div>
+        <div class="info">
+          <h3>+91 9628502277</h3>
+          <p>Mobile &amp; WhatsApp</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="icon">🏥</div>
+        <div class="info">
+          <h3>Hamzah Clinic</h3>
+          <p>Dr. Laique Ahmad (B.U.M.S)</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="icon">⏰</div>
+        <div class="info">
+          <h3>Clinic Timing</h3>
+          <p>Morning: 9:00 AM – 2:00 PM<br>Evening: 6:00 PM – 10:00 PM</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="icon">📍</div>
+        <div class="info">
+          <h3>Address</h3>
+          <p>Mata Badal Road, Paik Road Chauraha,<br>Pratapgarh, Uttar Pradesh 230001</p>
+          <a class="map-link" href="https://maps.app.goo.gl/C9z14j1dPUkQthvXA?g_st=ac" target="_blank">
+            SHOW ON GOOGLE MAPS →
+          </a>
+        </div>
+      </div>
+
+      <button class="save-btn" onclick="downloadVCard()">
+        + Save Contact to Phone
+      </button>
+    </div>
+  </div>
+
+  <script>
+    function downloadVCard() {
+      const vcard = [
+        "BEGIN:VCARD",
+        "VERSION:3.0",
+        "N:Ahmad;Laique;;Dr.;(B.U.M.S)",
+        "FN:Dr. Laique Ahmad - Hamzah Clinic",
+        "ORG:Hamzah Clinic",
+        "TITLE:Doctor (B.U.M.S)",
+        "TEL;TYPE=CELL,VOICE:+919628502277",
+        "ADR;TYPE=WORK:;;Mata Badal Road, Paik Road Chauraha;Pratapgarh;Uttar Pradesh;230001;India",
+        "URL:https://wa.me/919628502277",
+        "END:VCARD"
+      ].join("\n");
+
+      const blob = new Blob([vcard], { type: "text/vcard" });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement("a");
+      a.href = url;
+      a.download = "Dr_Laique_Ahmad_Hamzah_Clinic.vcf";
+      a.click();
+      URL.revokeObjectURL(url);
+    }
+  </script>
+</body>
+</html>
