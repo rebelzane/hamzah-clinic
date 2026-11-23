@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hamzah Clinic - Dr. Laique Ahmad (B.U.M.S)</title>
+  <title>Hamzah Clinic - Dr. Laique Ahmad</title>
   <style>
     * {
       box-sizing: border-box;
@@ -12,7 +12,7 @@
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
     }
     body {
-      background: #f1f5f9;
+      background: #f2f7f5;
       display: flex;
       justify-content: center;
       min-height: 100vh;
@@ -24,60 +24,66 @@
       max-width: 430px;
       border-radius: 20px;
       overflow: hidden;
-      box-shadow: 0 10px 25px rgba(15, 23, 42, 0.08);
+      box-shadow: 0 10px 25px rgba(15, 118, 110, 0.14);
       height: fit-content;
     }
     .header {
-      background: linear-gradient(135deg, #0f766e, #0d9488);
+      background: linear-gradient(135deg, #115e59, #0f766e);
       color: #ffffff;
       text-align: center;
       padding: 28px 20px 24px;
     }
-    .doctor-photo {
-      width: 96px;
-      height: 96px;
+    .pic-wrap {
+      width: 112px;
+      height: 112px;
       border-radius: 50%;
-      object-fit: cover;
-      border: 3px solid #ffffff;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-      margin-bottom: 12px;
-      background: #ffffff;
+      overflow: hidden;
+      border: 3.5px solid rgba(255, 255, 255, 0.92);
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+      margin: 0 auto 14px;
+      background: #0d4a46;
     }
-    .clinic-badge {
+    .profile-pic {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: 52% 22%;
+      display: block;
+    }
+    .badge {
       display: inline-block;
-      background: rgba(255, 255, 255, 0.18);
-      padding: 4px 12px;
+      background: rgba(255, 255, 255, 0.16);
+      padding: 4px 14px;
       border-radius: 999px;
       font-size: 12px;
       font-weight: 600;
-      letter-spacing: 0.5px;
-      margin-bottom: 8px;
-      text-transform: uppercase;
+      letter-spacing: 0.6px;
+      margin-bottom: 10px;
     }
     .header h1 {
-      font-size: 24px;
+      font-size: 25px;
       font-weight: 700;
       margin-bottom: 4px;
     }
     .header p {
-      font-size: 15px;
-      opacity: 0.92;
+      font-size: 14px;
+      opacity: 0.94;
     }
     .quick-actions {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      background: #115e59;
-      border-top: 1px solid rgba(255, 255, 255, 0.15);
+      background: #134e4a;
+      border-top: 1px solid rgba(255, 255, 255, 0.14);
     }
     .quick-actions a {
       color: #ffffff;
       text-decoration: none;
       text-align: center;
       padding: 14px 8px;
-      font-size: 12px;
-      font-weight: 600;
+      font-size: 12.5px;
+      font-weight: 700;
       letter-spacing: 0.4px;
-      border-right: 1px solid rgba(255, 255, 255, 0.15);
+      border-right: 1px solid rgba(255, 255, 255, 0.14);
     }
     .quick-actions a:last-child {
       border-right: none;
@@ -96,14 +102,14 @@
       justify-content: center;
       gap: 10px;
       width: 100%;
-      background: #25d366;
+      background: #22c55e;
       color: #ffffff;
       text-decoration: none;
       font-weight: 700;
-      font-size: 16px;
+      font-size: 15.5px;
       padding: 14px;
       border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(37, 211, 102, 0.3);
+      box-shadow: 0 4px 12px rgba(34, 197, 94, 0.28);
     }
     .details {
       padding: 12px 20px 24px;
@@ -113,7 +119,7 @@
       align-items: flex-start;
       gap: 14px;
       padding: 16px 0;
-      border-bottom: 1px solid #e2e8f0;
+      border-bottom: 1px solid #e5e7eb;
     }
     .row:last-child {
       border-bottom: none;
@@ -126,34 +132,35 @@
     }
     .info h3 {
       font-size: 15px;
-      color: #0f172a;
-      font-weight: 600;
+      color: #111827;
+      font-weight: 700;
       margin-bottom: 3px;
     }
     .info p {
-      font-size: 13.5px;
-      color: #64748b;
-      line-height: 1.45;
+      font-size: 14px;
+      color: #4b5563;
+      line-height: 1.5;
     }
     .map-link {
       display: inline-block;
       margin-top: 8px;
-      color: #0d9488;
+      color: #0f766e;
       font-size: 13px;
       font-weight: 700;
       text-decoration: none;
+      letter-spacing: 0.3px;
     }
     .save-btn {
       display: block;
       width: 100%;
-      margin-top: 8px;
-      padding: 12px;
+      margin-top: 10px;
+      padding: 13px;
       background: #f8fafc;
-      color: #0f172a;
+      color: #111827;
       border: 1.5px solid #cbd5e1;
       border-radius: 12px;
-      font-size: 14px;
-      font-weight: 600;
+      font-size: 14.5px;
+      font-weight: 700;
       cursor: pointer;
     }
   </style>
@@ -161,16 +168,18 @@
 <body>
   <div class="card">
     <div class="header">
-      <img src="Snapchat-265435254.jpg" alt="Dr. Laique Ahmad" class="doctor-photo" />
-      <div class="clinic-badge">Hamzah Clinic</div>
+      <div class="pic-wrap">
+        <img class="profile-pic" src="IMG-20261120-WA0005.jpg" alt="Dr. Laique Ahmad - B.U.M.S" />
+      </div>
+      <div class="badge">HAMZAH CLINIC</div>
       <h1>Dr. Laique Ahmad</h1>
-      <p>Doctor (B.U.M.S)</p>
+      <p>B.U.M.S</p>
     </div>
 
     <div class="quick-actions">
       <a href="tel:+919628502277"><span>📞</span>CALL</a>
       <a href="https://wa.me/919628502277" target="_blank"><span>💬</span>WHATSAPP</a>
-      <a href="https://maps.app.goo.gl/C9z14j1dPUkQthvXA?g_st=ac" target="_blank"><span>📍</span>DIRECTIONS</a>
+      <a href="https://maps.google.com/?q=Mata+Badal+Road,+Paik+Road+Chauraha,+Pratapgarh,+Uttar+Pradesh+230001" target="_blank"><span>📍</span>DIRECTIONS</a>
     </div>
 
     <div class="cta-wrap">
@@ -200,7 +209,7 @@
         <div class="icon">⏰</div>
         <div class="info">
           <h3>Clinic Timing</h3>
-          <p>Morning: 9:00 AM – 2:00 PM<br>Evening: 6:00 PM – 10:00 PM</p>
+          <p>Morning: 9:00 AM - 2:00 PM<br />Evening: 6:00 PM - 10:00 PM</p>
         </div>
       </div>
 
@@ -208,8 +217,8 @@
         <div class="icon">📍</div>
         <div class="info">
           <h3>Address</h3>
-          <p>Mata Badal Road, Paik Road Chauraha,<br>Pratapgarh, Uttar Pradesh 230001</p>
-          <a class="map-link" href="https://maps.app.goo.gl/C9z14j1dPUkQthvXA?g_st=ac" target="_blank">
+          <p>Mata Badal Road, Paik Road Chauraha,<br />Pratapgarh, Uttar Pradesh 230001</p>
+          <a class="map-link" href="https://maps.google.com/?q=Mata+Badal+Road,+Paik+Road+Chauraha,+Pratapgarh,+Uttar+Pradesh+230001" target="_blank">
             SHOW ON GOOGLE MAPS →
           </a>
         </div>
@@ -226,17 +235,16 @@
       const vcard = [
         "BEGIN:VCARD",
         "VERSION:3.0",
-        "N:Ahmad;Laique;;Dr.;(B.U.M.S)",
+        "N:Ahmad;Dr. Laique;;;",
         "FN:Dr. Laique Ahmad - Hamzah Clinic",
         "ORG:Hamzah Clinic",
-        "TITLE:Doctor (B.U.M.S)",
+        "TITLE:B.U.M.S",
         "TEL;TYPE=CELL,VOICE:+919628502277",
         "ADR;TYPE=WORK:;;Mata Badal Road, Paik Road Chauraha;Pratapgarh;Uttar Pradesh;230001;India",
-        "URL:https://wa.me/919628502277",
         "END:VCARD"
       ].join("\n");
 
-      const blob = new Blob([vcard], { type: "text/vcard" });
+      const blob = new Blob([vcard], { type: "text/vcard;charset=utf-8" });
       const url = URL.createObjectURL(blob);
       const a = document.createElement("a");
       a.href = url;
